@@ -8,6 +8,7 @@ from cryptography.hazmat.primitives import hashes
 from keys import load_private_key
 from jwt import decode, InvalidTokenError
 import json
+import os
 
 nest_asyncio.apply()
 
@@ -52,7 +53,7 @@ active_users = {}
 async def handler(websocket, path):
     token = await websocket.recv()
     try:
-        user_data = decode(token, "your_jwt_secret_key", algorithms=["HS256"])
+        user_data = decode(token, os.getenv('JWT_SECRET_KEY', 'default_jwt_secret_key'), algorithms=["HS256"])
         username = user_data['sub']
         active_users[websocket] = username
         print(f"User {username} connected")
