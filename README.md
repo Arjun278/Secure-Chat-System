@@ -74,6 +74,27 @@
         }
     }
     ```
+### Configuring Environment Variables
+
+1. **Install `python-dotenv`**:
+
+    ```bash
+    pip install python-dotenv
+    ```
+
+2. **Create a `.env` File**:
+
+    In the root directory of your project, create a file named `.env` with the following content:
+
+    ```env
+    JWT_SECRET_KEY=your_jwt_secret_key
+    ```
+
+3. **Load Environment Variables in Your Code**:
+ Modify your `flask_app.py` to load the environment variables using `python-dotenv`.
+load_dotenv()
+
+
 
 ## Running the Code
 
