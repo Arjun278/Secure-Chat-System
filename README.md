@@ -113,15 +113,3 @@
     - The server will receive, decrypt, and reassemble the message, then send it to other connected clients.
     - The client will display messages received from the server.
 
-## Ethical Backdoors
-
-This project includes intentional backdoors for educational purposes. Below are the details of these backdoors and how to exploit them.
-
-### Backdoor 1: Hardcoded JWT Secret Key
-
-#### Vulnerability
-The JWT secret key is hardcoded within the source code, allowing anyone with access to the source code to forge JWT tokens.
-
-```python
-# Hardcoded JWT secret key
-app.config['JWT_SECRET_KEY'] = 'your_jwt_secret_key'
