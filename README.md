@@ -14,7 +14,7 @@
 1. Clone the repository:
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/Arjun278/Secure-Chat-System
     cd secure_chat
     ```
 
