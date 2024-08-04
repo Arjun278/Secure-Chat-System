@@ -1,0 +1,29 @@
+{
+    "server": [
+        {
+            "domain": "s11",
+            "address": "10.13.101.178"
+        },
+        {
+            "domain": "s3",
+            "address": "10.13.83.163"
+        },
+        {
+            "domain": "s4",
+            "address": "10.13.101.145"
+        },
+        {
+            "domain": "s6",
+            "address": "10.13.81.121"
+        },
+        {
+            "domain": "s2",
+            "address": "10.13.89.245"
+        }
+    ],
+    "applicationServerDetails": {
+        "defaultServerPort": "5555",
+        "defaultClientPort": "4567",
+        "defaultDomainName": "127.0.0.1"  
+    }
+}
