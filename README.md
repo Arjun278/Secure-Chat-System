@@ -134,3 +134,8 @@ load_dotenv()
     - The server will receive, decrypt, and reassemble the message, then send it to other connected clients.
     - The client will display messages received from the server.
 
+### Group members 
+1. Anirudh Jalagam
+2. Arjun Sathya Prakash
+3. Sebastian Hennebry
+4. Uma Naga Lakshmi Musunuru
