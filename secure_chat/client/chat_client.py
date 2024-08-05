@@ -49,7 +49,7 @@ def register(base_url, username, password):
     try:
         response = requests.post(f"{base_url}/register", json={"username": username, "password": password})
         print(f"Response status code: {response.status_code}")
-        print(f"Response content: {response.text}")
+        #print(f"Response content: {response.text}")
         if response.status_code == 201:
             print("User registered successfully.")
         else:
@@ -64,9 +64,9 @@ def login(base_url, username, password):
     try:
         response = requests.post(f"{base_url}/login", json={"username": username, "password": password})
         print(f"Response status code: {response.status_code}")
-        print(f"Response content: {response.text}")
+        #print(f"Response content: {response.text}")
         if response.status_code == 200:
-            return response.json()['access_token']
+            return "succes"
         else:
             try:
                 print(f"Login failed: {response.json()['msg']}")
